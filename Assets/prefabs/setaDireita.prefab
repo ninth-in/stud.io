@@ -11,10 +11,8 @@ GameObject:
   - component: {fileID: 4996560708323645914}
   - component: {fileID: 4996560708323645913}
   - component: {fileID: 4996560708323645912}
-  - component: {fileID: 4996560708323645919}
-  - component: {fileID: 4996560708323645918}
   m_Layer: 0
-  m_Name: seta
+  m_Name: setaDireita
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,34 +95,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d76986ee77982740be2aff4ce59132c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  apertado: 0
---- !u!58 &4996560708323645919
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4996560708323645915}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.15
---- !u!114 &4996560708323645918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4996560708323645915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e47fc1786ed91a948bc71b7dd15d4617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beatTempo: 0.6
-  comecou: 0
