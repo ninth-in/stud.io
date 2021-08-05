@@ -31,10 +31,11 @@ public class BotaoControle: MonoBehaviour
 
         else {
 
-                    if (Input.GetKeyDown(key) && active)
-                    {
-                        Destroy(nota);
-                    }
+            if (Input.GetKeyDown(key) && active)
+            {
+                Debug.Log("hit");
+                Destroy(nota);
+            } else { Debug.Log("miss"); }
 
                     if (Input.GetKeyDown(key))
                     {
@@ -61,4 +62,5 @@ public class BotaoControle: MonoBehaviour
         active = false;
 
     }
+
 }
