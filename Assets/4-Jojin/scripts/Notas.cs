@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Notas : MonoBehaviour
 {
-    public bool apertado;
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,20 +17,5 @@ public class Notas : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(tag == "GameController")
-        {
-            apertado = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (tag == "GameController")
-        {
-            apertado = false;
-        }
-    }
 
 }
