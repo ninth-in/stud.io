@@ -11,6 +11,7 @@ public class BotaoControle: MonoBehaviour
     GameObject nota;
     public bool createMode;
     public GameObject n;
+    private Vector3 Score; 
 
     public KeyCode key;
 
@@ -33,9 +34,9 @@ public class BotaoControle: MonoBehaviour
 
             if (Input.GetKeyDown(key) && active)
             {
-                Debug.Log("hit");
+                addScore();
                 Destroy(nota);
-            } else { Debug.Log("miss"); }
+            }
 
                     if (Input.GetKeyDown(key))
                     {
@@ -61,6 +62,19 @@ public class BotaoControle: MonoBehaviour
     {
         active = false;
 
+    }
+
+    void addScore()
+    {
+        float difY = Mathf.Abs(transform.localPosition.y - Score.y);
+
+        if (difY <= 1)
+        {
+            print("perfeito");
+        }
+        else if (difY > 1 && difY <= 2)
+            print("Boa");
+        else print("errou");
     }
 
 }

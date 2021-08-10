@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Nota
   - text
+  - Score
   layers:
   - Default
   - TransparentFX
