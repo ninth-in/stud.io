@@ -11,7 +11,8 @@ public class BotaoControle: MonoBehaviour
     GameObject nota;
     public bool createMode;
     public GameObject n;
-    private Vector3 Score; 
+    public int Score;
+    public int scorePerNote = 100;
 
     public KeyCode key;
 
@@ -66,7 +67,7 @@ public class BotaoControle: MonoBehaviour
 
     void addScore()
     {
-        float difY = Mathf.Abs(transform.localPosition.y - Score.y);
+        /*float difY = Mathf.Abs(transform.localPosition.y - );
 
         if (difY <= 1)
         {
@@ -74,7 +75,9 @@ public class BotaoControle: MonoBehaviour
         }
         else if (difY > 1 && difY <= 2)
             print("Boa");
-        else print("errou");
+        else print("errou");*/
+
+        Score += scorePerNote;
     }
 
 }
